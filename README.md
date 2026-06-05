@@ -10,3 +10,4 @@ My daily DSA solutions and learnings.
 - Day 4 - Median of Two Sorted Arrays
 - Day 5 - Longest Palindromic Substring
 - Day 6 - Zigzag Conversion
+- Day 7 - Reverse Integer
