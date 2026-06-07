@@ -12,3 +12,4 @@ My daily DSA solutions and learnings.
 - Day 6 - Zigzag Conversion
 - Day 7 - Reverse Integer
 - Day 8 - String to Integer (atoi)
+- Day 9 - Palindrome Number
