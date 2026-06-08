@@ -13,3 +13,4 @@ My daily DSA solutions and learnings.
 - Day 7 - Reverse Integer
 - Day 8 - String to Integer (atoi)
 - Day 9 - Palindrome Number
+- Day 10 - Valid Palindrome
