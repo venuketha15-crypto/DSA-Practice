@@ -14,3 +14,4 @@ My daily DSA solutions and learnings.
 - Day 8 - String to Integer (atoi)
 - Day 9 - Palindrome Number
 - Day 10 - Valid Palindrome
+- Day 11 - Remove Duplicates from Sorted Array
