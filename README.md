@@ -15,3 +15,4 @@ My daily DSA solutions and learnings.
 - Day 9 - Palindrome Number
 - Day 10 - Valid Palindrome
 - Day 11 - Remove Duplicates from Sorted Array
+- Day 12 - Merge Sorted Array
