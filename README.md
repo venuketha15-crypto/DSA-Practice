@@ -16,3 +16,4 @@ My daily DSA solutions and learnings.
 - Day 10 - Valid Palindrome
 - Day 11 - Remove Duplicates from Sorted Array
 - Day 12 - Merge Sorted Array
+- Day 13 - Container with Most Water
