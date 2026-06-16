@@ -20,4 +20,5 @@ My daily DSA solutions and learnings.
 - Day 14 - ThreeSum (3Sum)
 - Day 15 - Valid Anagram
 - Day 16 - Group Anagrams 
-- Day 17 - Top K Frequent Elements 
+- Day 17 - Top K Frequent Elements
+- Day 18 - Product of Array Except Self
