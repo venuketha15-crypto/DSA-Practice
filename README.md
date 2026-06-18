@@ -23,3 +23,4 @@ My daily DSA solutions and learnings.
 - Day 17 - Top K Frequent Elements
 - Day 18 - Product of Array Except Self
 - Day 19 - Longest Consecutive Sequence
+- Day 20 - Valid Sudoku
