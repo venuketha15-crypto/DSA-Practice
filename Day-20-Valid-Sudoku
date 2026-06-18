@@ -25,23 +25,132 @@ Empty cells are represented by '.'.
 
 ## Optimized Approach (Hash Set)
 
-### Key Observation
+- Create separate Hash Sets to track numbers seen in rows, columns, and 3×3 boxes.
+- Traverse every cell of the Sudoku board.
+- Skip empty cells represented by '.'.
+- For each number:
+  - Check whether it already exists in its row.
+  - Check whether it already exists in its column.
+  - Check whether it already exists in its 3×3 box.
+- If a duplicate is found in any row, column, or box, return False.
+- Otherwise, store the number in the corresponding row, column, and box sets.
+- If all cells are processed without duplicates, return True.
 
-For every number on the board, we need to ensure:
+---
+
+## Example
+
+### Input
 
 ```text
-1. The number has not appeared in the same row.
-2. The number has not appeared in the same column.
-3. The number has not appeared in the same 3×3 box.
+[
+ ["5","3",".",".","7",".",".",".","."],
+ ["6",".",".","1","9","5",".",".","."],
+ [".","9","8",".",".",".",".","6","."],
+ ["8",".",".",".","6",".",".",".","3"],
+ ["4",".",".","8",".","3",".",".","1"],
+ ["7",".",".",".","2",".",".",".","6"],
+ [".","6",".",".",".",".","2","8","."],
+ [".",".",".","4","1","9",".",".","5"],
+ [".",".",".",".","8",".",".","7","9"]
+]
 ```
 
-Hash Sets help us perform these checks in O(1) time.
+---
+
+### Step 1: Visit Cell (0,0)
+
+```text
+Number = 5
+```
+
+Check:
+
+```text
+Row 0 → Does not contain 5
+Column 0 → Does not contain 5
+Box 0 → Does not contain 5
+```
+
+Store:
+
+```text
+Row 0 → {5}
+Column 0 → {5}
+Box 0 → {5}
+```
+
+---
+
+### Step 2: Visit Cell (0,1)
+
+```text
+Number = 3
+```
+
+Check:
+
+```text
+Row 0 → Does not contain 3
+Column 1 → Does not contain 3
+Box 0 → Does not contain 3
+```
+
+Store:
+
+```text
+Row 0 → {5, 3}
+Column 1 → {3}
+Box 0 → {5, 3}
+```
+
+---
+
+### Step 3: Continue Processing
+
+Each number is checked against:
+
+```text
+Its Row
+Its Column
+Its 3×3 Box
+```
+
+If the number is unique, store it and continue.
+
+---
+
+### Duplicate Example
+
+Suppose a row becomes:
+
+```text
+5 3 . . 7 . . . 5
+```
+
+When the last 5 is visited:
+
+```text
+Row 0 already contains 5
+```
+
+Therefore:
+
+```text
+Duplicate Found
+```
+
+Return:
+
+```text
+False
+```
 
 ---
 
 ## Understanding the 3×3 Boxes
 
-Sudoku contains 9 boxes:
+The Sudoku board contains 9 boxes:
 
 ```text
 0 1 2
@@ -57,146 +166,33 @@ Cell (4,5) → Box 4
 Cell (8,8) → Box 8
 ```
 
-A box index helps us determine which box a cell belongs to.
+A box index helps identify which 3×3 box a cell belongs to.
 
 ---
 
-## Example
-
-### Input
+## Final Output
 
 ```text
-5 3 . . 7 . . . .
-6 . . 1 9 5 . . .
-. 9 8 . . . . 6 .
-8 . . . 6 . . . 3
-4 . . 8 . 3 . . 1
-7 . . . 2 . . . 6
-. 6 . . . . 2 8 .
-. . . 4 1 9 . . 5
-. . . . 8 . . 7 9
+True
 ```
+
+The board is valid because no duplicates exist in any row, column, or 3×3 box.
 
 ---
 
-## Processing a Cell
+## Explanation
 
-### Cell (0,0) = 5
+The key idea is to detect duplicates efficiently.
 
-Check:
-
-```text
-Is 5 already in Row 0?
-No
-
-Is 5 already in Column 0?
-No
-
-Is 5 already in Box 0?
-No
-```
-
-Store:
+Hash Sets allow us to quickly determine whether a number has already appeared in:
 
 ```text
-Row 0 → {5}
-Column 0 → {5}
-Box 0 → {5}
+A Row
+A Column
+A 3×3 Box
 ```
 
----
-
-### Cell (0,1) = 3
-
-Check:
-
-```text
-Is 3 already in Row 0?
-No
-
-Is 3 already in Column 1?
-No
-
-Is 3 already in Box 0?
-No
-```
-
-Store:
-
-```text
-Row 0 → {5,3}
-Column 1 → {3}
-Box 0 → {5,3}
-```
-
----
-
-## Duplicate Example
-
-Suppose a row becomes:
-
-```text
-5 3 . . 7 . . . 5
-```
-
-When we reach the last:
-
-```text
-5
-```
-
-Check:
-
-```text
-Is 5 already in Row 0?
-Yes
-```
-
-Therefore:
-
-```text
-Duplicate Found
-```
-
-The Sudoku board becomes invalid.
-
----
-
-## Why Use Hash Sets?
-
-Hash Sets provide:
-
-```text
-O(1)
-```
-
-lookup time.
-
-This allows us to quickly determine whether a number has already appeared in a row, column, or box.
-
----
-
-## Final Answer
-
-If no duplicates are found in:
-
-```text
-✓ Any row
-✓ Any column
-✓ Any 3×3 box
-```
-
-Then:
-
-```text
-Return True
-```
-
-Otherwise:
-
-```text
-Return False
-```
+Since Hash Sets provide O(1) lookup time, we can validate the Sudoku board efficiently.
 
 ---
 
@@ -228,7 +224,7 @@ O(1)
 Reason:
 
 - A fixed number of sets are used.
-- Memory usage does not grow.
+- Memory usage remains constant.
 
 For a generalized n × n Sudoku:
 
@@ -240,13 +236,15 @@ O(n²)
 
 ## What I Learned
 
-- How to validate rows using Hash Sets.
-- How to validate columns using Hash Sets.
-- How to validate 3×3 boxes using Hash Sets.
-- Why Sets provide O(1) lookup.
-- How box indexing identifies the correct Sudoku box.
+- How Sudoku validation works.
+- How to use Hash Sets for duplicate detection.
+- How to validate rows efficiently.
+- How to validate columns efficiently.
+- How to validate 3×3 boxes efficiently.
+- Why Hash Sets provide O(1) lookup.
+- How box indexing helps identify the correct Sudoku box.
 - Difference between brute force and optimized approaches.
-- How to solve Sudoku validation efficiently.
+- Why Hash Sets are preferred over Lists.
 
 ---
 
