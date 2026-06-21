@@ -26,3 +26,4 @@ My daily DSA solutions and learnings.
 - Day 20 - Valid Sudoku
 - Day 21 - Longest Repeating Character Replacement
 - Day 22 - Permutation in String
+- Day 23 - Best Time to Buy and Sell Stock
