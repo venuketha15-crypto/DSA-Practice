@@ -27,4 +27,5 @@ My daily DSA solutions and learnings.
 - Day 21 - Longest Repeating Character Replacement
 - Day 22 - Permutation in String
 - Day 23 - Best Time to Buy and Sell Stock
-- Day 24 - Binary Search 
+- Day 24 - Binary Search
+- Day 25 - Search Insert Position
