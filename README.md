@@ -35,3 +35,4 @@ My daily DSA solutions and learnings.
 - Day 29 - Min Stack
 - Day 30 - Implement Stack using Queues
 - Day 31 - Evaluate Reverse Polish Notation
+- Day 32 - Generate Parentheses
