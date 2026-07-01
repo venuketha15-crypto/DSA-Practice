@@ -36,3 +36,4 @@ My daily DSA solutions and learnings.
 - Day 30 - Implement Stack using Queues
 - Day 31 - Evaluate Reverse Polish Notation
 - Day 32 - Generate Parentheses
+- Day 33 - Daily Temperatures
