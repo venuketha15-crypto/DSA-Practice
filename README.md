@@ -37,3 +37,4 @@ My daily DSA solutions and learnings.
 - Day 31 - Evaluate Reverse Polish Notation
 - Day 32 - Generate Parentheses
 - Day 33 - Daily Temperatures
+- Day 34 - Baseball Game
