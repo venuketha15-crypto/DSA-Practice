@@ -39,3 +39,4 @@ My daily DSA solutions and learnings.
 - Day 33 - Daily Temperatures
 - Day 34 - Baseball Game
 - Day 35 - Car Fleet
+- Day 36 - Remove All Adjacent Duplicates in String
