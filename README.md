@@ -43,3 +43,4 @@ My daily DSA solutions and learnings.
 - Day 37 - Make The String Great
 - Day 38 - Asteroid Collision
 - Day 39 - Decode String
+- Day 40 - Backspace String Compare
