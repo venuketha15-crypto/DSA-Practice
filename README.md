@@ -44,3 +44,4 @@ My daily DSA solutions and learnings.
 - Day 38 - Asteroid Collision
 - Day 39 - Decode String
 - Day 40 - Backspace String Compare
+- Day 41 - Reverse Linked List
