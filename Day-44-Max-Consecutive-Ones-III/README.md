@@ -1,6 +1,6 @@
-# Day 45 of My DSA Journey 🚀
+# Day 44 of My DSA Journey 🚀
 
-## Problem 45: Max Consecutive Ones III
+## Problem 44: Max Consecutive Ones III
 
 ### Difficulty
 Medium
@@ -135,4 +135,4 @@ Only three variables (`left`, `zeroCount`, and `maxLength`) are used.
 
 🐍 Language: Python
 
-📅 Day 45 of Daily DSA Practice
+📅 Day 44 of Daily DSA Practice
