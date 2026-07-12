@@ -47,3 +47,4 @@ My daily DSA solutions and learnings.
 - Day 41 - Reverse Linked List
 - Day 42 - Minimum Size Subarray Sum
 - Day 43 - Maximum Average Subarray I 
+- Day 44 - Max Consecutive Ones III 
