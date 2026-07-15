@@ -49,3 +49,4 @@ My daily DSA solutions and learnings.
 - Day 43 - Maximum Average Subarray I 
 - Day 44 - Max Consecutive Ones III
 - Day 45 - Minimum Window Substring
+- Day 46 - Majority Element
