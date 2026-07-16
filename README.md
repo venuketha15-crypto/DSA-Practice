@@ -50,3 +50,4 @@ My daily DSA solutions and learnings.
 - Day 44 - Max Consecutive Ones III
 - Day 45 - Minimum Window Substring
 - Day 46 - Majority Element
+- Day 47 - Spiral Matrix
