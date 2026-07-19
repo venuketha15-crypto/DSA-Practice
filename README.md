@@ -52,3 +52,4 @@ My daily DSA solutions and learnings.
 - Day 46 - Majority Element
 - Day 47 - Spiral Matrix
 - Day 48 - Rotate Image
+- Day 49 - Set Matrix Zeroes
