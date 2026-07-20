@@ -53,3 +53,4 @@ My daily DSA solutions and learnings.
 - Day 47 - Spiral Matrix
 - Day 48 - Rotate Image
 - Day 49 - Set Matrix Zeroes
+- Day 50 - Word Search
