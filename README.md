@@ -54,3 +54,4 @@ My daily DSA solutions and learnings.
 - Day 48 - Rotate Image
 - Day 49 - Set Matrix Zeroes
 - Day 50 - Word Search
+- Day 51 - Range Sum Query - Immutable
