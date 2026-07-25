@@ -1,6 +1,6 @@
-# Day 54 of My DSA Journey 🚀
+# Day 53 of My DSA Journey 🚀
 
-## Problem 54: Contiguous Array
+## Problem 53: Contiguous Array
 
 ### Difficulty
 Medium
@@ -316,4 +316,4 @@ The HashMap stores prefix sums and their first occurrence.
 
 🧩 Pattern: Prefix Sum + HashMap
 
-📅 Day 54 of Daily DSA Practice
+📅 Day 53 of Daily DSA Practice
