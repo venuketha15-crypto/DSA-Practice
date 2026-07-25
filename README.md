@@ -56,3 +56,4 @@ My daily DSA solutions and learnings.
 - Day 50 - Word Search
 - Day 51 - Range Sum Query - Immutable
 - Day 52 - Subarray Sum Equals K
+- Day 53 - Contiguous Array
