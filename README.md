@@ -58,3 +58,4 @@ My daily DSA solutions and learnings.
 - Day 52 - Subarray Sum Equals K
 - Day 53 - Contiguous Array
 - Day 54 - Merge Intervals
+- Day 56 - Insert Interval
