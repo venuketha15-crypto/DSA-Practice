@@ -255,28 +255,6 @@ The output list stores the final merged intervals.
 
 ---
 
-## Key Takeaway 💡
-
-Every interval belongs to one of three categories:
-
-```text
-1. Before newInterval
-        ↓
-Simply Add
-
-2. Overlapping with newInterval
-        ↓
-Merge
-
-3. After newInterval
-        ↓
-Simply Add
-```
-
-Following these three phases lets us solve the problem efficiently in **O(n)** time.
-
----
-
 ✅ Problem Solved: Insert Interval (LeetCode #57)
 
 🐍 Language: Python
